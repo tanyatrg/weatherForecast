@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Прогноз погоды</title>
+</head>
+<body>
+    <h1>Прогноз погоды</h1>
+    <h3>Введите город:</h3>
+    <input type="text"   id="city" >
+    <br><button id="buttonOk"  onclick="getTemp()">OK</button>
+    <table id="tableId" style="display:none">
+        <tr>
+            <td><h4>Температура:   </h4></td>
+            <td><p id="resultTemp"></p></td>
+        </tr>
+        <tr><td><h4>Влажность:   </h4></td>
+            <td><p id="resultHumidity"></p></td>
+        </tr>
+        <tr><td><h4>Скорость ветра:   </h4></td>
+            <td><p id="resultWind"></p></td>    
+        </tr>
+    </table>
+    <img id="weatherImg" src="" width="180" height="180" style="display:none">
+  
+    <script src="index.js"></script>
+</body>
+</html>
