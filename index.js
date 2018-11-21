@@ -27,19 +27,19 @@ function getTemp(){
               document.getElementById("resultHumidity").innerHTML = humidity +" %";   
               document.getElementById("resultWind").innerHTML = wind +" м/с";        
               if(weatherImg == "Clouds")  {
-                image.src = "cloudy.jpg";
+                image.src = "/img/cloudy.jpg";
                 image.style = "display:inline"
               }else{
                 if(weatherImg == "Clear"){
-                  image.src = "sunny.jpg";
+                  image.src = "/img/sunny.jpg";
                   image.style = "display:inline"
                 }else{
                   if(weatherImg == "Rain"){
-                    image.src = "rainy.jpg";
+                    image.src = "/img/rainy.jpg";
                     image.style = "display:inline"
                   }else{
                     if(weatherImg == "Snow"){
-                      image.src = "snow.jpg";
+                      image.src = "/img/snow.jpg";
                       image.style = "display:inline"
                     }
                   }
